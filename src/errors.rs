@@ -1,10 +1,11 @@
 use std::fmt;
 use std::fmt::Formatter;
+use std::io::Error;
 
 #[derive(Debug)]
 pub enum CipherErrors {
-    InputFileNotExist,
-    KeyFile,
+    InputFile(Error),
+    KeyFile(Error),
     KeyTooLong,
     OutputPathExists,
 }
