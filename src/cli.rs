@@ -6,8 +6,6 @@ use std::path::PathBuf;
     author = "Stepan Kolesnikov",
     version = "0.1.0",
     about = "CS-Cipher encrypt/decrypt cli tool",
-    disable_help_subcommand = true, // Убирает лишние подкоманды помощи
-    allow_external_subcommands = true // Для гибкости работы
 )]
 pub struct Cli {
     /// Subcommand to run
